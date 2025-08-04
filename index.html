@@ -1,3 +1,5 @@
+<!-- Since you want a multi-page site, you'd split your content into separate HTML files. Here’s a plan: create separate files like index.html, research.html, teaching.html, projects.html, etc. Each will have a similar header and nav, but unique content. Below is an example of index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,170 +8,52 @@
   <title>Kazi Md Zubaer | Organic Chemist</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
-      color: #f0f0f0;
-      line-height: 1.6;
-    }
-    header {
-      text-align: center;
-      padding: 60px 20px 30px;
-    }
-    header img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      object-fit: cover;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-    header h1 {
-      margin: 20px 0 10px;
-      font-size: 2.2em;
-      font-weight: 700;
-    }
-    header p {
-      font-size: 1.1em;
-      opacity: 0.9;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      background: rgba(255,255,255,0.1);
-      padding: 10px 0;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 8px 15px;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #ffd700;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 30px;
-      background: rgba(0,0,0,0.2);
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-    section h2 {
-      border-bottom: 2px solid #ffd700;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-      font-weight: 700;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-      transition: transform 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-    a.button {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 22px;
-      background: #ffd700;
-      color: #000;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    a.button:hover {
-      background: #e6c200;
-    }
-    footer {
-      text-align: center;
-      margin: 30px 10px;
-      font-size: 0.9em;
-      opacity: 0.8;
-    }
+    /* shared modern styles */
+    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background: linear-gradient(135deg,#6a11cb,#2575fc); color:#f0f0f0; }
+    header { text-align:center; padding:60px 20px 30px; }
+    header img { width:160px; height:160px; border-radius:50%; border:3px solid #fff; object-fit:cover; box-shadow:0 4px 10px rgba(0,0,0,0.3); }
+    header h1 { margin:20px 0 10px; font-size:2.2em; font-weight:700; }
+    header p { font-size:1.1em; opacity:0.9; }
+    nav { display:flex; justify-content:center; flex-wrap:wrap; background: rgba(255,255,255,0.1); padding:10px 0; }
+    nav a { color:#fff; text-decoration:none; margin:8px 15px; font-weight:500; transition:color 0.3s; }
+    nav a:hover { color:#ffd700; }
+    section { max-width:900px; margin:40px auto; padding:30px; background: rgba(0,0,0,0.2); border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.3); }
+    section h2 { border-bottom:2px solid #ffd700; padding-bottom:8px; margin-bottom:20px; font-weight:700; }
+    a.button { display:inline-block; margin:10px; padding:10px 22px; background:#ffd700; color:#000; border-radius:25px; text-decoration:none; font-weight:bold; transition:background 0.3s; }
+    a.button:hover { background:#e6c200; }
+    footer { text-align:center; margin:30px 10px; font-size:0.9em; opacity:0.8; }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="20231026_161402.jpg" alt="Kazi Md Zubaer">
-    <h1>Kazi Md Zubaer</h1>
-    <p>Organic Chemist | Supramolecular Chemistry Researcher | Synthesis & Method Development Specialist</p>
-    <a href="CV for JOB.pdf" class="button" target="_blank">Download CV</a>
-    <a href="https://www.linkedin.com/in/kzubaer/" class="button" target="_blank">LinkedIn</a>
-  </header>
+<header>
+  <img src="20231026_161402.jpg" alt="Kazi Md Zubaer">
+  <h1>Kazi Md Zubaer</h1>
+  <p>Organic Chemist | Supramolecular Chemistry Researcher | Synthesis & Method Development Specialist</p>
+  <a href="CV for JOB.pdf" class="button" target="_blank">Download CV</a>
+  <a href="https://www.linkedin.com/in/kzubaer/" class="button" target="_blank">LinkedIn</a>
+</header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#projects">Projects</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="projects.html">Projects</a>
+  <a href="publications.html">Publications</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am currently pursuing my M.S. in Chemistry at Ball State University, focusing on supramolecular chemistry and the synthesis of functional organic materials. With hands-on experience in diverse analytical techniques and method development, my research interests lie at the intersection of organic synthesis and supramolecular self-assembly.</p>
-  </section>
+<section>
+  <h2>About Me</h2>
+  <p>I am currently pursuing my M.S. in Chemistry at Ball State University, focusing on supramolecular chemistry and the synthesis of functional organic materials. My research interests lie at the intersection of organic synthesis and supramolecular self-assembly.</p>
+</section>
 
-  <section id="research">
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Supramolecular polymers & macrocycles</li>
-      <li>Design and synthesis of functional monomers</li>
-      <li>Metal–organic frameworks (MOFs)</li>
-      <li>Degradation of persistent organic pollutants (POPs)</li>
-    </ul>
-  </section>
-
-  <section id="teaching">
-    <h2>Teaching & Professional Experience</h2>
-    <p><strong>Graduate Teaching Assistant</strong> at Ball State University – Instructing chemistry labs, proctoring exams, and tutoring students.</p>
-    <p><strong>Lecturer of Chemistry</strong> at Scholars’ School & College – Designed curriculum, led practical lab sessions, and mentored students (2018–2022).</p>
-    <p><strong>Analytical Chemist</strong> at Eskayef Pharmaceuticals Ltd. – Analysis of raw materials and finished products, method development (2017–2018).</p>
-    <p><strong>Quality Control Officer</strong> at Popular Pharmaceuticals Ltd. – Routine analysis and SOP implementation (2016–2017).</p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects & Gallery</h2>
-    <div class="gallery">
-      <img src="project1.jpg" alt="Project 1">
-      <img src="project2.jpg" alt="Project 2">
-      <img src="project3.jpg" alt="Project 3">
-      <img src="project4.jpg" alt="Project 4">
-    </div>
-    <p style="text-align:center;">Add photos or diagrams of your experiments, posters, or lab work here.</p>
-  </section>
-
-  <section id="publications">
-    <h2>Publications</h2>
-    <p>Coming soon! (or add your publication list here)</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:kzubaer@email.sc.edu" style="color:#ffd700; text-decoration: underline;">kzubaer@email.sc.edu</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/kzubaer/" style="color:#ffd700; text-decoration: underline;">kzubaer</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 Kazi Md Zubaer
-  </footer>
+<footer>
+  &copy; 2025 Kazi Md Zubaer
+</footer>
 
 </body>
 </html>
+
+<!-- Repeat similar structure for research.html, teaching.html etc., changing the content in <section>. Let me know if you'd like me to create those pages too! -->
 
