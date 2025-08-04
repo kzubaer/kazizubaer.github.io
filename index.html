@@ -1,3 +1,4 @@
+<!-- index.html with colorful style, animation, and smooth scroll -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,28 +7,29 @@
 <title>Kazi Md Zubaer | Organic Chemist</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  body { margin:0; font-family:'Roboto', sans-serif; color:#333; background:#fafafa; }
-  header { display:flex; flex-direction:column; align-items:center; padding:60px 20px 30px; background:#fff; box-shadow:0 2px 4px rgba(0,0,0,0.1); }
-  header img { width:140px; height:140px; border-radius:50%; object-fit:cover; margin-bottom:15px; }
-  header h1 { margin:0; font-size:2em; font-weight:700; }
-  header p { margin:8px 0; font-size:1em; color:#555; }
-  nav { display:flex; justify-content:center; flex-wrap:wrap; gap:15px; background:#f8f8f8; padding:12px; border-top:1px solid #eee; border-bottom:1px solid #eee; }
-  nav a { text-decoration:none; color:#333; font-weight:500; padding:6px 12px; border-radius:4px; transition:background 0.3s; }
-  nav a:hover { background:#e0e0e0; }
-  main { max-width:800px; margin:40px auto; padding:0 20px; }
-  section { margin-bottom:40px; }
-  section h2 { font-size:1.5em; margin-bottom:15px; border-bottom:2px solid #333; padding-bottom:5px; }
-  footer { text-align:center; padding:20px; font-size:0.9em; color:#888; border-top:1px solid #eee; }
+body { margin:0; font-family:'Roboto',sans-serif; color:#fff; background:linear-gradient(135deg,#6a11cb,#2575fc); scroll-behavior:smooth; }
+header { text-align:center; padding:50px 20px; background:rgba(255,255,255,0.1); animation: fadeIn 1.5s ease; }
+header img { width:140px; height:140px; border-radius:50%; object-fit:cover; border:3px solid #fff; box-shadow:0 0 10px rgba(255,255,255,0.6); transition:transform 0.3s; }
+header img:hover { transform:scale(1.05); }
+header h1 { margin:10px 0 5px; font-size:2em; }
+header p { margin:0; color:#ddd; }
+nav { display:flex; justify-content:center; flex-wrap:wrap; gap:15px; background:rgba(255,255,255,0.2); padding:12px; animation: slideDown 1s ease; }
+nav a { text-decoration:none; color:#fff; padding:8px 14px; border-radius:20px; background:rgba(255,215,0,0.2); transition:background 0.3s, transform 0.3s; }
+nav a:hover { background:rgba(255,215,0,0.4); transform:scale(1.1); }
+main { max-width:900px; margin:40px auto; padding:0 20px; background:rgba(255,255,255,0.1); border-radius:12px; animation: fadeIn 2s ease; }
+section { margin-bottom:40px; }
+section h2 { font-size:1.5em; border-bottom:2px solid #ffd700; margin-bottom:10px; padding-bottom:5px; }
+footer { text-align:center; padding:20px; font-size:0.9em; color:#ddd; background:rgba(255,255,255,0.1); }
+@keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
+@keyframes slideDown { from{transform:translateY(-20px); opacity:0;} to{transform:translateY(0); opacity:1;} }
 </style>
 </head>
 <body>
-
 <header>
   <img src="20231026_161402.jpg" alt="Kazi Md Zubaer">
   <h1>Kazi Md Zubaer</h1>
   <p>Organic Chemist | Supramolecular Chemistry Researcher | Synthesis & Method Development Specialist</p>
 </header>
-
 <nav>
   <a href="index.html">Home</a>
   <a href="research.html">Research</a>
@@ -36,22 +38,14 @@
   <a href="publications.html">Publications</a>
   <a href="contact.html">Contact</a>
 </nav>
-
 <main>
   <section>
-    <h2>About Me</h2>
-    <p>I am currently pursuing my M.S. in Chemistry at Ball State University, focusing on supramolecular chemistry and the synthesis of functional organic materials. My research interests lie at the intersection of organic synthesis and supramolecular self-assembly.</p>
-  </section>
-  <section>
-    <h2>Download CV</h2>
-    <p><a href="CV for JOB.pdf" target="_blank">Click here to view my CV</a></p>
+    <h2>Welcome</h2>
+    <p>Thank you for visiting my website! Explore the menu to learn about my research, teaching, projects, and publications, or get in touch via the contact page.</p>
   </section>
 </main>
-
 <footer>
   &copy; 2025 Kazi Md Zubaer
 </footer>
-
 </body>
 </html>
-
